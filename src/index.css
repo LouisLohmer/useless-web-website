@@ -8,7 +8,7 @@
 
 /*classes*/
 .watermark {
-  font-size: 20px;
+  font-size: 30px;
   font-family: monospace;
   border-left: solid 3px #0f0f0f;
   padding-left: 15px;
@@ -16,17 +16,16 @@
 
 .heart {
   color: red;
-  font-size: 27px;
+  font-size: 37px;
 }
 
 .span {
-  font-size: 24px;
+  font-size: 34px;
   padding-right: 15px;
 }
 
 .centered {
   margin: auto;
-  width: 760px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +33,7 @@
 }
 
 .animated-black-cat {
-  width: 60%;
+  width: 100%;
 }
 
 /*HTML elements*/
@@ -44,7 +43,14 @@ b {
 
 body {
   display: flex;
+  margin: 0;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+html {
+  margin: 0;
+  height: 100%;
 }
