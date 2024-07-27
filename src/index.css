@@ -1,0 +1,50 @@
+/*fonts*/
+.handjet-semibold {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*classes*/
+.watermark {
+  font-size: 20px;
+  font-family: monospace;
+  border-left: solid 3px #0f0f0f;
+  padding-left: 15px;
+}
+
+.heart {
+  color: red;
+  font-size: 27px;
+}
+
+.span {
+  font-size: 24px;
+  padding-right: 15px;
+}
+
+.centered {
+  margin: auto;
+  width: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.animated-black-cat {
+  width: 60%;
+}
+
+/*HTML elements*/
+b {
+  font-weight: 900;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
