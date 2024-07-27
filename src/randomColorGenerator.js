@@ -33,14 +33,31 @@ function randomColorGenerator() {
 
   //Set the random background color for the body once the loop is done
   document.body.style.backgroundColor = newHexColorCode;
+
+  //Display new hex color code in the frontend
+  document.getElementById("currentHexColorCode").innerHTML =
+    "Current background color: <b>" + newHexColorCode + "</b>";
 }
 
-//call randomColorGenerator() if the enter key is released
+function clickCounter(newKeyRelease) {
+  let currentClickAmount = 0 + newKeyRelease;
+
+  //Display amount of enter key clicksin the frontend
+  document.getElementById("currentClickAmount").innerHTML =
+    "Amount of clicks on the enter key: <b>" + currentClickAmount + "</b>";
+}
+
+//call randomColorGenerator() and clickCounter() if the enter key is released to update background color and click counter
+let newKeyRelease = 0;
 document.body.addEventListener("keyup", (event) => {
   if (event.key === "Enter") {
     randomColorGenerator();
+    //Increase newKeyRelease once when enter key is release once and set it as a function parameter
+    newKeyRelease += 1;
+    clickCounter(newKeyRelease);
   }
 });
 
-//call randomColorGenerator() once to set background color when the page is loaded
+//call randomColorGenerator() and clickCounter() once to set background color and click counter
 randomColorGenerator();
+clickCounter(0);
