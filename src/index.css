@@ -1,61 +1,60 @@
-/*fonts*/
-.handjet-semibold {
-  font-family: "Handjet", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
 /*classes*/
 .watermark {
-  font-size: 30px;
-  font-family: monospace;
-  padding-left: 15px;
+    font-size: 30px;
+    font-family: monospace;
+    padding-left: 15px;
 }
 
 .heart {
-  color: red;
-  font-size: 37px;
+    color: red;
+    font-size: 37px;
 }
 
-.span {
-  font-size: 34px;
-  padding-right: 15px;
+.handjet-font {
+    font-family: 'Handjet', sans-serif;
+    font-weight: 600;
 }
 
-.centered {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+#current-hex-color-code,
+#current-clickamount,
+#eventlistener-informer {
+    font-size: 34px;
+    padding-right: 15px;
+}
+
+.centered-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
-  border-right: solid 3px #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px #0f0f0f;
 }
 
 .animated-black-cat {
-  width: 100%;
+    width: 100%;
 }
 
 /*HTML elements*/
 b {
-  font-weight: 900;
+    font-weight: 900;
 }
 
 body {
-  display: flex;
-  margin: 0;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    margin: 0;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 html {
-  margin: 0;
-  height: 100%;
+    margin: 0;
+    height: 100%;
 }
