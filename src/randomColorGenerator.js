@@ -1,5 +1,7 @@
 function randomColorGenerator() {
     let newHexColorCode = '#';
+    let htmlBody = document.body;
+    let spanHexColorCode = document.getElementById('current-hex-color-code');
     const hexColorCodeElements = [
         '0',
         '1',
@@ -24,26 +26,25 @@ function randomColorGenerator() {
         newHexColorCode += randomHexColorCodeElement;
     }
 
-    document.body.style.backgroundColor = newHexColorCode;
-
-    let spanHexColorCode = document.getElementById('current-hex-color-code');
+    htmlBody.style.backgroundColor = newHexColorCode;
     spanHexColorCode.innerHTML = 'Current background color: <b>' + newHexColorCode + '</b>';
 }
 
-function clickCounter(newKeyRelease) {
-    let currentClickAmount = 0 + newKeyRelease;
-
+function clickCounter(newClickamount) {
+    let currentClickAmount = 0 + newClickamount;
     let spanClickcounter = document.getElementById('current-clickamount');
+
     spanClickcounter.innerHTML = 'Amount of clicks on the enter key: <b>' + currentClickAmount + '</b>';
 }
 
 function setNewEventlistener() {
-    let newKeyRelease = 0;
+    let clickAmount = 0;
+
     document.body.addEventListener('keyup', event => {
         if (event.key === 'Enter') {
             randomColorGenerator();
-            newKeyRelease += 1;
-            clickCounter(newKeyRelease);
+            clickAmount += 1;
+            clickCounter(clickAmount);
         }
     });
 }
